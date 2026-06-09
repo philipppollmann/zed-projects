@@ -1,0 +1,55 @@
+id = "projects"
+name = "Projects"
+version = "0.1.0"
+schema_version = 1
+authors = ["Philipp Pollmann"]
+description = "Quick access and launchpad slash commands for opening local projects in Zed."
+repository = "https://github.com/philipppollmann/zed-projects"
+
+[slash_commands.projects]
+description = "Open the localhost project launchpad or open a project by name/path."
+requires_argument = false
+
+[slash_commands.project-launchpad]
+description = "Open the localhost project launchpad."
+requires_argument = false
+
+[slash_commands.project-open-launchpad]
+description = "Open the localhost project launchpad."
+requires_argument = false
+
+[slash_commands.project-list]
+description = "Show project launchpad entries, optionally filtered by text."
+requires_argument = false
+
+[slash_commands.project-add]
+description = "Add a project folder to the launchpad."
+requires_argument = true
+
+[slash_commands.project-icon]
+description = "Set a project icon or image URL."
+requires_argument = true
+
+[slash_commands.project-color]
+description = "Set a project tile color."
+requires_argument = true
+
+[slash_commands.project-pin]
+description = "Pin, unpin, or toggle a project."
+requires_argument = true
+
+[slash_commands.project-group]
+description = "Assign a project to a launchpad group."
+requires_argument = true
+
+[slash_commands.project-scan]
+description = "Scan project roots and add discovered repositories."
+requires_argument = false
+
+[slash_commands.project-config]
+description = "Show zed-projects config paths and active source."
+requires_argument = false
+
+[slash_commands.project-help]
+description = "Show zed-projects usage instructions."
+requires_argument = false
